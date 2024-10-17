@@ -12,8 +12,17 @@ const meta: Meta<typeof CounterComponent> = {
 	parameters: {
 		// More on how to position stories at: https://storybook.js.org/docs/7.0/solid/configure/story-layout
 		layout: "fullscreen",
+		// screenshot: {
+		// 	viewport: '320x240',
+		// },
 		screenshot: {
-			viewport: '320x240',
+			fullPage: false,
+			clip: {
+				x: 0,
+				y: 0,
+				width: 144,
+				height: 64,
+			},
 		},
 	},
 };
