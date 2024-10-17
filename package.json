@@ -8,6 +8,7 @@
 		"start": "vinxi start",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
+		"test-storybook": "test-storybook",
 		"storycap": "storycap --captureTimeout 30000 http://localhost:6006"
 	},
 	"dependencies": {
@@ -27,6 +28,7 @@
 		"@storybook/addon-links": "^8.3.5",
 		"@storybook/blocks": "^8.3.5",
 		"@storybook/test": "8.3.5",
+		"@storybook/test-runner": "^0.19.1",
 		"storybook": "^8.3.5",
 		"storybook-solidjs": "1.0.0-beta.2",
 		"storybook-solidjs-vite": "1.0.0-beta.2",
