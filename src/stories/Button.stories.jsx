@@ -27,26 +27,26 @@ export default meta;
 export const Primary = {
 	args: {
 		primary: true,
-		label: "Button",
+		children: "Button",
 	},
 };
 
 export const Secondary = {
 	args: {
-		label: "Button",
+		children: "Button",
 	},
 };
 
 export const Large = {
 	args: {
 		size: "large",
-		label: "Button",
+		children: "Button",
 	},
 };
 
 export const Small = {
 	args: {
 		size: "small",
-		label: "Button",
+		children: "Button",
 	},
 };
