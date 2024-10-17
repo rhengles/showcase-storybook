@@ -6,7 +6,6 @@ dist
 .netlify
 .vinxi
 .data
-.storybook
 app.config.timestamp_*.js
 
 # Environment
