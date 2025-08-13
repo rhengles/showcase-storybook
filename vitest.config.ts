@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import solid from 'vite-plugin-solid';
 import { defineConfig } from 'vitest/config';
 
-const dirname
+const dirname // @ts-ignore
   = typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
@@ -37,7 +37,10 @@ export default defineConfig({
                 },
             },
         ],
-        include: ['stories/**/*.stories.tsx', 'stories/**/*.test.tsx'],
-        exclude: ['stories/**/*.mdx'],
+        // storybook/test: Warning:
+        // Starting in Storybook 8.5.0-alpha.18, the "test.include" option in Vitest is discouraged
+        // in favor of just using the "stories" field in your Storybook configuration.
+        // include: ['stories/**/*.stories.tsx', 'stories/**/*.test.tsx'],
+        // exclude: ['stories/**/*.mdx'],
     },
 });
